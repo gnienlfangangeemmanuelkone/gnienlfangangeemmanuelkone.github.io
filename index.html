@@ -3,206 +3,118 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gnienlfangange Emmanuel Kone – Réseaux & Cybersécurité</title>
-<meta name="description" content="Portfolio de Gnienlfangange Emmanuel Kone, étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger.">
+<title>Gnienlfang Ange-Emmanuel Kone – Réseaux & Cybersécurité</title>
+<meta name="description" content="Portfolio de Gnienlfang Ange-Emmanuel Kone, étudiant ingénieur en réseaux et cybersécurité à l’ENSI Tanger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#EEF2F6; --ink:#14213D; --muted:#4B5A75; --line:#C7D1DF; --card:#FFFFFF;
-  --signal:#1F5FD1; --amber:#E58E1A;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--paper:#0F1626;--ink:#E8EEF8;--muted:#9FB0CC;--line:#2A3855;--card:#16203A;--signal:#6EA2FF;--amber:#F2A33A}
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
-a{color:var(--signal)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
-h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-nav{display:flex;gap:24px;justify-content:flex-end;padding:20px 0}
-nav a{color:var(--muted);text-decoration:none;font-weight:500}
-nav a:hover{color:var(--ink)}
-.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:40px 0 72px}
-.hero h1{font-size:clamp(30px,4.4vw,52px);font-weight:800;letter-spacing:-.02em;overflow-wrap:anywhere}
-.hero p{max-width:46ch;color:var(--muted);font-size:19px;margin:16px 0 28px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
-.btn.main{background:var(--ink);color:var(--paper)}
-.topo{width:100%;height:auto}
-.topo line{stroke:var(--line);stroke-width:2}
-.topo .node circle{fill:var(--card);stroke:var(--signal);stroke-width:3}
-.topo .node text{fill:var(--ink);font:500 15px "IBM Plex Sans",sans-serif;text-anchor:middle}
-.topo .core circle{fill:var(--amber);stroke:var(--amber)}
-.topo .core text{font-weight:800}
-.topo .node{cursor:default}
-.topo .node:hover circle{stroke:var(--amber)}
-section{padding:64px 0;border-top:1px solid var(--line)}
-section>.wrap>h2{font-size:clamp(30px,4vw,44px);margin-bottom:32px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
-.proj{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
-.proj h3{font-size:22px;margin-bottom:8px}
-.proj p{margin:0 0 16px;color:var(--muted);font-size:16px}
-.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
-.tags li{font-size:14px;padding:3px 10px;border:1px solid var(--line);border-radius:99px}
-.proj img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);margin:0 0 16px;display:block}
-a.plain{color:var(--ink);text-decoration:none}
-a.plain:hover{color:var(--signal)}
-.proj .dl{margin:16px 0 0}
-.pt{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:start}
-.pt>a{display:block}
-.pt img{margin:0}
-.proj code{font-size:14px;background:var(--paper);padding:1px 6px;border-radius:4px}
-.photo{position:relative;width:180px;height:180px;border-radius:50%;overflow:hidden;background:var(--signal);margin:0 0 20px;display:grid;place-items:center;color:#fff;font:800 68px "Bricolage Grotesque",sans-serif}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 16px}
-.gallery img{margin:0}
-.proj.big{grid-column:1/-1;border-left:6px solid var(--amber)}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.about p{margin:0 0 16px;max-width:60ch}
-.skills dt{font-weight:500;margin-top:14px}
-.skills dd{margin:2px 0 0;color:var(--muted)}
-.skills dt:first-child{margin-top:0}
-footer{padding:64px 0 80px;border-top:1px solid var(--line)}
-footer h2{font-size:clamp(30px,4vw,44px);margin-bottom:12px}
-footer ul{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:24px;flex-wrap:wrap}
-@media (max-width:760px){
-  .pt{grid-template-columns:1fr}
-  .hero,.about{grid-template-columns:1fr}
-  nav{justify-content:flex-start;flex-wrap:wrap}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <nav aria-label="Navigation principale">
-    <!-- <a href="#projets">Stage</a> -->
-    <!-- <a href="#reseau">Projets réseau</a> -->
-    <a href="#apropos">À propos</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav class="nav" aria-label="Navigation principale">
+  <a href="#accueil">Accueil</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#projets">Projets</a>
+  <a href="certificats.html">Certificats</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <header class="hero">
-    <div>
-      <!-- Ta photo : mets-la dans images/photo.jpg (carrée de préférence) -->
-      <div class="photo"><span aria-hidden="true">E</span><img src="images/photo.jpg" alt="Portrait d'Emmanuel" onerror="this.remove()"></div>
-      <!-- TODO: vérifie l'orthographe de ton nom (accents) -->
-      <h1>Gnienlfang Ange-Emmanuel Kone</h1>
-      <p>Étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger. Je construis des infrastructures, je les supervise et je cherche leurs failles.</p>
-      <div class="btns">
-        <a class="btn main" href="#reseau">Voir mes projets</a>
-        <!-- TODO: mets ton CV dans le dépôt sous le nom cv.pdf -->
-        <a class="btn" href="cv.pdf">Télécharger mon CV</a>
-      </div>
+<header class="hero" id="accueil">
+  <!-- Ta photo : images/photo.jpg (carrée de préférence) -->
+  <div class="photo"><span aria-hidden="true">E</span><img src="images/photo.jpg" alt="Portrait de Gnienlfang Ange-Emmanuel Kone" onerror="this.remove()"></div>
+  <span class="badge">Étudiant ingénieur en Cybersécurité | À la recherche d’un PFE</span>
+  <h1>Gnienlfang Ange-Emmanuel <b>KONE</b></h1>
+  <!-- Modifie ta ville si besoin -->
+  <p class="where">Tanger, Maroc · ENSI Tanger</p>
+  <div class="btns">
+    <a class="cta" href="#projets">Voir mes projets</a>
+    <a class="cta ghost" href="cv.pdf">Télécharger mon CV</a>
+  </div>
+</header>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="head"><h2>Mon <b>expertise</b></h2><p>Dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité.</p></div>
+    <div class="grid">
+      <article class="card">
+        <h3>Réseaux</h3>
+        <p>Conception et simulation d’architectures réseau : segmentation en VLAN, routage inter-VLAN, traduction d’adresses et filtrage du trafic.</p>
+        <ul class="tags"><li>Cisco Packet Tracer</li><li>VLAN &amp; Trunk</li><li>Routage inter-VLAN</li><li>NAT</li><li>ACL</li></ul>
+      </article>
+      <article class="card">
+        <h3>Cybersécurité</h3>
+        <p>Sécurité des réseaux et des infrastructures, test d’intrusion et analyse de vulnérabilités. J’apprends par la pratique, les CTF et la veille.</p>
+        <ul class="tags"><li>Pentesting</li><li>Analyse de vulnérabilités</li><li>CTF</li><li>Veille technologique</li></ul>
+      </article>
+      <article class="card">
+        <h3>Supervision &amp; IoT</h3>
+        <p>Supervision d’équipements industriels, collecte de télémétrie et gestion d’un parc informatique.</p>
+        <ul class="tags"><li>ThingsBoard</li><li>MQTT</li><li>GLPI</li><li>Docker</li></ul>
+      </article>
     </div>
-    <svg class="topo" viewBox="0 0 400 340" role="img" aria-label="Schéma reliant réseaux, cybersécurité, IoT et développement">
-      <line x1="200" y1="170" x2="70" y2="60"/>
-      <line x1="200" y1="170" x2="330" y2="60"/>
-      <line x1="200" y1="170" x2="70" y2="280"/>
-      <line x1="200" y1="170" x2="330" y2="280"/>
-      <line x1="70" y1="60" x2="330" y2="60"/>
-      <g class="node core"><circle cx="200" cy="170" r="42"/><text x="200" y="176">Moi</text></g>
-      <g class="node"><circle cx="70" cy="60" r="38"/><text x="70" y="65">Réseaux</text></g>
-      <g class="node"><circle cx="330" cy="60" r="38"/><text x="330" y="65">Sécurité</text></g>
-      <g class="node"><circle cx="70" cy="280" r="38"/><text x="70" y="285">IoT</text></g>
-      <g class="node"><circle cx="330" cy="280" r="38"/><text x="330" y="285">Systèmes</text></g>
-    </svg>
-  </header>
-</div>
+  </div>
+</section>
 
 <section id="projets">
   <div class="wrap">
-    <h2>Projets de stage</h2>
+    <div class="head"><h2>Mes <b>projets</b></h2><p>Un projet de stage et des travaux pratiques réseau.</p></div>
     <div class="grid">
-      <article class="proj big">
+
+      <article class="card proj wide">
+        <span class="tag-note">Projet de stage</span>
         <h3>Supervision à distance de groupes électrogènes</h3>
-        <p>Projet de stage : un système de supervision d'équipements industriels, avec remontée de télémétrie vers une plateforme IoT.</p>
-        <!-- Dashboards : mets tes captures dans images/ sous ces noms (une image absente disparaît toute seule). Ajoute une ligne <a> par image. -->
+        <p>Système de supervision d’équipements industriels, avec remontée de télémétrie vers une plateforme IoT.</p>
+        <!-- Dashboards : images/dashboard1.png, dashboard2.png... Une image absente disparaît toute seule. -->
         <div class="gallery">
           <a href="images/dashboard1.png" target="_blank" rel="noopener"><img src="images/dashboard1.png" alt="Dashboard de supervision 1" onerror="this.closest('a').remove()"></a>
           <a href="images/dashboard2.png" target="_blank" rel="noopener"><img src="images/dashboard2.png" alt="Dashboard de supervision 2" onerror="this.closest('a').remove()"></a>
           <a href="images/dashboard3.png" target="_blank" rel="noopener"><img src="images/dashboard3.png" alt="Dashboard de supervision 3" onerror="this.closest('a').remove()"></a>
         </div>
         <ul class="tags"><li>ThingsBoard</li><li>MQTT</li><li>IoT industriel</li></ul>
-        <!-- Rapport de stage : mets-le dans rapports/rapport-stage.pdf puis retire les -- autour de la ligne -->
-         <p class="dl"><a href="rapports/rapport-stage.pdf" target="_blank" rel="noopener">Lire mon rapport de stage (PDF)</a></p> 
+        <div class="actions"><a class="cta" href="rapports/rapport-stage.pdf" target="_blank" rel="noopener">Voir mon rapport de stage</a></div>
       </article>
-      <!-- <article class="proj">
-        <h3>Inventaire IT </h3>
-        <p>Déploiement de GLPI sur le site de stage pour suivre le parc informatique et gérer les tickets.</p>
-        <ul class="tags"><li>GLPI</li><li>Docker</li></ul>
-      </article> -->
-    </div>
-  </div>
-</section>
 
-<section id="reseau">
-  <div class="wrap">
-    <h2>Projets réseau</h2>
-    <div class="grid">
-      <article class="proj big pt">
-        <a href="images/nat-acl.png" target="_blank" rel="noopener"><img src="images/nat-acl.png" alt="Topologie Packet Tracer du projet NAT et ACL : deux VLAN, un switch, un routeur 2911 et un serveur externe"></a>
-        <div>
-          <h3>NAT avec ACL entre deux VLAN</h3>
-          <p>Deux VLAN (10 et 20) reliés par un trunk à un routeur 2911, qui traduit leurs adresses privées en une adresse publique pour joindre un serveur externe. Une ACL étendue filtre le trafic du VLAN 20.</p>
-          <p>Résultat : PC0 et PC1 partagent la même adresse publique (203.0.113.1) bien qu'ils soient dans des VLAN différents, ce que je vérifie avec <code>show ip nat translations</code>.</p>
-          <ul class="tags"><li>Packet Tracer</li><li>NAT overload</li><li>ACL</li><li>VLAN</li></ul>
-          <p class="dl"><a href="projets/nat-acl.pkt" download>Télécharger le fichier .pkt</a></p>
-          <!-- Rapport PDF : mets-le dans rapports/nat-acl.pdf puis retire les -- autour de la ligne -->
-          <!-- <p class="dl"><a href="rapports/nat-acl.pdf" target="_blank" rel="noopener">Lire le rapport (PDF)</a></p> -->
+      <article class="card proj">
+        <span class="tag-note">Projet réseau</span>
+        <h3>NAT avec ACL entre deux VLAN</h3>
+        <a href="images/nat-acl.png" target="_blank" rel="noopener"><img src="images/nat-acl.png" alt="Topologie Packet Tracer : deux VLAN, un switch, un routeur 2911 et un serveur externe"></a>
+        <p>Deux VLAN (10 et 20) reliés par un trunk à un routeur 2911, qui traduit leurs adresses privées en une adresse publique pour joindre un serveur externe. Une ACL étendue filtre le trafic du VLAN 20.</p>
+        <p>Résultat : PC0 et PC1 partagent la même adresse publique (203.0.113.1), vérifiée avec <code>show ip nat translations</code>.</p>
+        <ul class="tags"><li>Packet Tracer</li><li>NAT overload</li><li>ACL</li><li>VLAN</li></ul>
+        <div class="actions">
+          <a class="cta" href="projets/nat-acl.pkt" download>Télécharger le .pkt</a>
+          <!-- <a class="cta ghost" href="rapports/nat-acl.pdf" target="_blank" rel="noopener">Voir le rapport</a> -->
         </div>
       </article>
-      <article class="proj big pt">
-        <a href="images/routage-inter-vlan.png" target="_blank" rel="noopener"><img src="images/routage-inter-vlan.png" alt="Topologie Packet Tracer du routage inter-VLAN : deux PC, un switch et un routeur 2911"></a>
-        <div>
-          <h3>Routage inter-VLAN</h3>
-          <p>Deux PC dans deux VLAN différents, un switch et un routeur. Le câble entre le switch et le routeur est divisé en deux sous-interfaces virtuelles (encapsulation) : chaque paquet venant d'un VLAN est traité par l'interface qui lui correspond.</p>
-          <p>Le routeur vérifie la destination du paquet et le dirige vers la bonne interface, ce qui permet aux deux VLAN de communiquer.</p>
-          <ul class="tags"><li>Packet Tracer</li><li>Router-on-a-stick</li><li>VLAN</li><li>Trunk</li></ul>
-          <p class="dl"><a href="projets/routage-inter-vlan.pkt" download>Télécharger le fichier .pkt</a></p>
-          <!-- <p class="dl"><a href="rapports/routage-inter-vlan.pdf" target="_blank" rel="noopener">Lire le rapport (PDF)</a></p> -->
+
+      <article class="card proj">
+        <span class="tag-note">Projet réseau</span>
+        <h3>Routage inter-VLAN</h3>
+        <a href="images/routage-inter-vlan.png" target="_blank" rel="noopener"><img src="images/routage-inter-vlan.png" alt="Topologie Packet Tracer : deux PC, un switch et un routeur 2911"></a>
+        <p>Deux PC dans deux VLAN différents, un switch et un routeur. Le câble switch–routeur est divisé en deux sous-interfaces virtuelles (encapsulation) : chaque paquet est traité par l’interface de son VLAN.</p>
+        <p>Le routeur vérifie la destination du paquet et le dirige vers la bonne interface, ce qui permet aux deux VLAN de communiquer.</p>
+        <ul class="tags"><li>Packet Tracer</li><li>Router-on-a-stick</li><li>Trunk</li></ul>
+        <div class="actions">
+          <a class="cta" href="projets/routage-inter-vlan.pkt" download>Télécharger le .pkt</a>
+          <!-- <a class="cta ghost" href="rapports/routage-inter-vlan.pdf" target="_blank" rel="noopener">Voir le rapport</a> -->
         </div>
       </article>
+
     </div>
   </div>
 </section>
 
-<section id="apropos">
+<section id="contact" class="contact">
   <div class="wrap">
-    <h2>À propos</h2>
-    <div class="about">
-      <div>
-        <p>Je suis en dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité, à l'ENSI Tanger (MAROC).</p>
-        <p>Curieux et passionné par la cybersécurité, je m'intéresse particulièrement à la sécurité des réseaux et des infrastructures, au test d'intrusion (Pentesting) ainsi qu'à l'analyse des vulnérabilités.
-
-J'aime explorer les mécanismes des systèmes, identifier leurs failles de sécurité et comprendre les différentes techniques permettant de mieux les protéger. À travers la pratique, les challenges CTF et la veille technologique, je cherche constamment à approfondir mes connaissances.
-
-Actuellement à la recherche d'un Projet de Fin d'Études (PFE), je souhaite mettre mes compétences en pratique et contribuer à des projets concrets dans le domaine de la cybersécurité.</p>
-        <!-- TODO: ajoute 1-2 phrases perso (CTF, veille, ce que tu cherches pour ton PFE) -->
-      </div>
-      <dl class="skills">
-        <dt>Réseaux</dt><dd>Simulation sous Cisco Packet Tracer, architecture réseau, supervision</dd>
-        <dt>Sécurité</dt><dd>Option cybersécurité (ENSI Tanger)</dd>
-        <dt>Outils</dt><dd>Docker, GLPI, ThingsBoard, MQTT</dd>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <p>Un stage, un projet, une question : écris-moi.</p>
+    <div class="head"><h2>Me <b>contacter</b></h2><p>Un PFE, un projet, une question : écris-moi.</p></div>
     <ul>
-      <!-- TODO: remplace par tes vrais liens -->
-      <li><a href="mailto:mag604kone@gmail.com">mag604kone@gmail.com</a></li>
-      <li><a href="www.linkedin.com/in/gnienlfang-ange-emmanuel-kone-068232335">LinkedIn</a></li>
-      <li><a href="https://github.com/gnienlfangangeemmanuelkone">GitHub</a></li>
+      <li><a class="cta" href="mailto:mag604kone@gmail.com">mag604kone@gmail.com</a></li>
+      <li><a class="cta ghost" href="https://www.linkedin.com/in/gnienlfang-ange-emmanuel-kone-068232335" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="cta ghost" href="https://github.com/gnienlfangangeemmanuelkone" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
   </div>
-</footer>
+</section>
+
+<footer>© Gnienlfang Ange-Emmanuel Kone</footer>
 </body>
 </html>
