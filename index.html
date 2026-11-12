@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emmanuel – Réseaux & Cybersécurité</title>
-<meta name="description" content="Portfolio d'Emmanuel, étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger.">
+<title>Gnienlfangange Emmanuel Kone – Réseaux & Cybersécurité</title>
+<meta name="description" content="Portfolio de Gnienlfangange Emmanuel Kone, étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -27,8 +27,8 @@ nav{display:flex;gap:24px;justify-content:flex-end;padding:20px 0}
 nav a{color:var(--muted);text-decoration:none;font-weight:500}
 nav a:hover{color:var(--ink)}
 .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:40px 0 72px}
-.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;letter-spacing:-.03em}
-.hero p{max-width:46ch;color:var(--muted);font-size:19px;margin:20px 0 28px}
+.hero h1{font-size:clamp(30px,4.4vw,52px);font-weight:800;letter-spacing:-.02em;overflow-wrap:anywhere}
+.hero p{max-width:46ch;color:var(--muted);font-size:19px;margin:16px 0 28px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
 .btn.main{background:var(--ink);color:var(--paper)}
@@ -56,8 +56,10 @@ a.plain:hover{color:var(--signal)}
 .pt>a{display:block}
 .pt img{margin:0}
 .proj code{font-size:14px;background:var(--paper);padding:1px 6px;border-radius:4px}
-.photo{position:relative;width:168px;height:168px;border-radius:50%;overflow:hidden;background:var(--signal);margin:0 0 24px;display:grid;place-items:center;color:#fff;font:800 64px "Bricolage Grotesque",sans-serif}
+.photo{position:relative;width:180px;height:180px;border-radius:50%;overflow:hidden;background:var(--signal);margin:0 0 20px;display:grid;place-items:center;color:#fff;font:800 68px "Bricolage Grotesque",sans-serif}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 16px}
+.gallery img{margin:0}
 .proj.big{grid-column:1/-1;border-left:6px solid var(--amber)}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .about p{margin:0 0 16px;max-width:60ch}
@@ -77,16 +79,19 @@ footer ul{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:24px;flex-w
 <body>
 <div class="wrap">
   <nav aria-label="Navigation principale">
-    <a href="#projets">Stage</a>
-    <a href="#reseau">Projets réseau</a>
+    <!-- <a href="#projets">Stage</a> -->
+    <!-- <a href="#reseau">Projets réseau</a> -->
     <a href="#apropos">À propos</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header class="hero">
     <div>
-      <h1>Emmanuel</h1>
-      <p>Étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger. Je construis des infrastructures, je les supervise et je cherche leurs failles. À la recherche d'un stage de fin d'études (PFE).</p>
+      <!-- Ta photo : mets-la dans images/photo.jpg (carrée de préférence) -->
+      <div class="photo"><span aria-hidden="true">E</span><img src="images/photo.jpg" alt="Portrait d'Emmanuel" onerror="this.remove()"></div>
+      <!-- TODO: vérifie l'orthographe de ton nom (accents) -->
+      <h1>Gnienlfang Ange-Emmanuel Kone</h1>
+      <p>Étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger. Je construis des infrastructures, je les supervise et je cherche leurs failles.</p>
       <div class="btns">
         <a class="btn main" href="#reseau">Voir mes projets</a>
         <!-- TODO: mets ton CV dans le dépôt sous le nom cv.pdf -->
@@ -115,13 +120,21 @@ footer ul{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:24px;flex-w
       <article class="proj big">
         <h3>Supervision à distance de groupes électrogènes</h3>
         <p>Projet de stage : un système de supervision d'équipements industriels, avec remontée de télémétrie vers une plateforme IoT.</p>
+        <!-- Dashboards : mets tes captures dans images/ sous ces noms (une image absente disparaît toute seule). Ajoute une ligne <a> par image. -->
+        <div class="gallery">
+          <a href="images/dashboard1.png" target="_blank" rel="noopener"><img src="images/dashboard1.png" alt="Dashboard de supervision 1" onerror="this.closest('a').remove()"></a>
+          <a href="images/dashboard2.png" target="_blank" rel="noopener"><img src="images/dashboard2.png" alt="Dashboard de supervision 2" onerror="this.closest('a').remove()"></a>
+          <a href="images/dashboard3.png" target="_blank" rel="noopener"><img src="images/dashboard3.png" alt="Dashboard de supervision 3" onerror="this.closest('a').remove()"></a>
+        </div>
         <ul class="tags"><li>ThingsBoard</li><li>MQTT</li><li>IoT industriel</li></ul>
+        <!-- Rapport de stage : mets-le dans rapports/rapport-stage.pdf puis retire les -- autour de la ligne -->
+         <p class="dl"><a href="rapports/rapport-stage.pdf" target="_blank" rel="noopener">Lire mon rapport de stage (PDF)</a></p> 
       </article>
-      <article class="proj">
-        <h3>Inventaire IT et helpdesk</h3>
+      <!-- <article class="proj">
+        <h3>Inventaire IT </h3>
         <p>Déploiement de GLPI sur le site de stage pour suivre le parc informatique et gérer les tickets.</p>
         <ul class="tags"><li>GLPI</li><li>Docker</li></ul>
-      </article>
+      </article> -->
     </div>
   </div>
 </section>
@@ -162,10 +175,12 @@ footer ul{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:24px;flex-w
     <h2>À propos</h2>
     <div class="about">
       <div>
-        <!-- Ta photo : mets-la dans images/photo.jpg (carrée de préférence) -->
-        <div class="photo" aria-hidden="false">E<img src="images/photo.jpg" alt="Portrait d'Emmanuel" onerror="this.remove()"></div>
-        <p>Je suis en dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité, à l'ENSI Tanger.</p>
-        <p>Mon terrain, ce sont les réseaux et la sécurité : comprendre comment les systèmes communiquent, puis comment les protéger.</p>
+        <p>Je suis en dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité, à l'ENSI Tanger (MAROC).</p>
+        <p>Curieux et passionné par la cybersécurité, je m'intéresse particulièrement à la sécurité des réseaux et des infrastructures, au test d'intrusion (Pentesting) ainsi qu'à l'analyse des vulnérabilités.
+
+J'aime explorer les mécanismes des systèmes, identifier leurs failles de sécurité et comprendre les différentes techniques permettant de mieux les protéger. À travers la pratique, les challenges CTF et la veille technologique, je cherche constamment à approfondir mes connaissances.
+
+Actuellement à la recherche d'un Projet de Fin d'Études (PFE), je souhaite mettre mes compétences en pratique et contribuer à des projets concrets dans le domaine de la cybersécurité.</p>
         <!-- TODO: ajoute 1-2 phrases perso (CTF, veille, ce que tu cherches pour ton PFE) -->
       </div>
       <dl class="skills">
@@ -183,9 +198,9 @@ footer ul{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:24px;flex-w
     <p>Un stage, un projet, une question : écris-moi.</p>
     <ul>
       <!-- TODO: remplace par tes vrais liens -->
-      <li><a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></li>
-      <li><a href="https://www.linkedin.com/in/ton-profil">LinkedIn</a></li>
-      <li><a href="https://github.com/ton-pseudo">GitHub</a></li>
+      <li><a href="mailto:mag604kone@gmail.com">mag604kone@gmail.com</a></li>
+      <li><a href="www.linkedin.com/in/gnienlfang-ange-emmanuel-kone-068232335">LinkedIn</a></li>
+      <li><a href="https://github.com/gnienlfangangeemmanuelkone">GitHub</a></li>
     </ul>
   </div>
 </footer>
