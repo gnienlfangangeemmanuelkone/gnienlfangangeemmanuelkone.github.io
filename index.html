@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emmanuel – Réseaux & Cybersécurité</title>
+<meta name="description" content="Portfolio d'Emmanuel, étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF2F6; --ink:#14213D; --muted:#4B5A75; --line:#C7D1DF; --card:#FFFFFF;
+  --signal:#1F5FD1; --amber:#E58E1A;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#0F1626;--ink:#E8EEF8;--muted:#9FB0CC;--line:#2A3855;--card:#16203A;--signal:#6EA2FF;--amber:#F2A33A}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--signal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:24px;justify-content:flex-end;padding:20px 0}
+nav a{color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:40px 0 72px}
+.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:46ch;color:var(--muted);font-size:19px;margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--paper)}
+.topo{width:100%;height:auto}
+.topo line{stroke:var(--line);stroke-width:2}
+.topo .node circle{fill:var(--card);stroke:var(--signal);stroke-width:3}
+.topo .node text{fill:var(--ink);font:500 15px "IBM Plex Sans",sans-serif;text-anchor:middle}
+.topo .core circle{fill:var(--amber);stroke:var(--amber)}
+.topo .core text{font-weight:800}
+.topo .node{cursor:default}
+.topo .node:hover circle{stroke:var(--amber)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(30px,4vw,44px);margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
+.proj h3{font-size:22px;margin-bottom:8px}
+.proj p{margin:0 0 16px;color:var(--muted);font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{font-size:14px;padding:3px 10px;border:1px solid var(--line);border-radius:99px}
+.proj img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);margin:0 0 16px;display:block}
+a.plain{color:var(--ink);text-decoration:none}
+a.plain:hover{color:var(--signal)}
+.proj .dl{margin:16px 0 0}
+.pt{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:start}
+.pt>a{display:block}
+.pt img{margin:0}
+.proj code{font-size:14px;background:var(--paper);padding:1px 6px;border-radius:4px}
+.photo{position:relative;width:168px;height:168px;border-radius:50%;overflow:hidden;background:var(--signal);margin:0 0 24px;display:grid;place-items:center;color:#fff;font:800 64px "Bricolage Grotesque",sans-serif}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.proj.big{grid-column:1/-1;border-left:6px solid var(--amber)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 16px;max-width:60ch}
+.skills dt{font-weight:500;margin-top:14px}
+.skills dd{margin:2px 0 0;color:var(--muted)}
+.skills dt:first-child{margin-top:0}
+footer{padding:64px 0 80px;border-top:1px solid var(--line)}
+footer h2{font-size:clamp(30px,4vw,44px);margin-bottom:12px}
+footer ul{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:24px;flex-wrap:wrap}
+@media (max-width:760px){
+  .pt{grid-template-columns:1fr}
+  .hero,.about{grid-template-columns:1fr}
+  nav{justify-content:flex-start;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Navigation principale">
+    <a href="#projets">Stage</a>
+    <a href="#reseau">Projets réseau</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Emmanuel</h1>
+      <p>Étudiant ingénieur en réseaux et cybersécurité à l'ENSI Tanger. Je construis des infrastructures, je les supervise et je cherche leurs failles. À la recherche d'un stage de fin d'études (PFE).</p>
+      <div class="btns">
+        <a class="btn main" href="#reseau">Voir mes projets</a>
+        <!-- TODO: mets ton CV dans le dépôt sous le nom cv.pdf -->
+        <a class="btn" href="cv.pdf">Télécharger mon CV</a>
+      </div>
+    </div>
+    <svg class="topo" viewBox="0 0 400 340" role="img" aria-label="Schéma reliant réseaux, cybersécurité, IoT et développement">
+      <line x1="200" y1="170" x2="70" y2="60"/>
+      <line x1="200" y1="170" x2="330" y2="60"/>
+      <line x1="200" y1="170" x2="70" y2="280"/>
+      <line x1="200" y1="170" x2="330" y2="280"/>
+      <line x1="70" y1="60" x2="330" y2="60"/>
+      <g class="node core"><circle cx="200" cy="170" r="42"/><text x="200" y="176">Moi</text></g>
+      <g class="node"><circle cx="70" cy="60" r="38"/><text x="70" y="65">Réseaux</text></g>
+      <g class="node"><circle cx="330" cy="60" r="38"/><text x="330" y="65">Sécurité</text></g>
+      <g class="node"><circle cx="70" cy="280" r="38"/><text x="70" y="285">IoT</text></g>
+      <g class="node"><circle cx="330" cy="280" r="38"/><text x="330" y="285">Systèmes</text></g>
+    </svg>
+  </header>
+</div>
+
+<section id="projets">
+  <div class="wrap">
+    <h2>Projets de stage</h2>
+    <div class="grid">
+      <article class="proj big">
+        <h3>Supervision à distance de groupes électrogènes</h3>
+        <p>Projet de stage : un système de supervision d'équipements industriels, avec remontée de télémétrie vers une plateforme IoT.</p>
+        <ul class="tags"><li>ThingsBoard</li><li>MQTT</li><li>IoT industriel</li></ul>
+      </article>
+      <article class="proj">
+        <h3>Inventaire IT et helpdesk</h3>
+        <p>Déploiement de GLPI sur le site de stage pour suivre le parc informatique et gérer les tickets.</p>
+        <ul class="tags"><li>GLPI</li><li>Docker</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="reseau">
+  <div class="wrap">
+    <h2>Projets réseau</h2>
+    <div class="grid">
+      <article class="proj big pt">
+        <a href="images/nat-acl.png" target="_blank" rel="noopener"><img src="images/nat-acl.png" alt="Topologie Packet Tracer du projet NAT et ACL : deux VLAN, un switch, un routeur 2911 et un serveur externe"></a>
+        <div>
+          <h3>NAT avec ACL entre deux VLAN</h3>
+          <p>Deux VLAN (10 et 20) reliés par un trunk à un routeur 2911, qui traduit leurs adresses privées en une adresse publique pour joindre un serveur externe. Une ACL étendue filtre le trafic du VLAN 20.</p>
+          <p>Résultat : PC0 et PC1 partagent la même adresse publique (203.0.113.1) bien qu'ils soient dans des VLAN différents, ce que je vérifie avec <code>show ip nat translations</code>.</p>
+          <ul class="tags"><li>Packet Tracer</li><li>NAT overload</li><li>ACL</li><li>VLAN</li></ul>
+          <p class="dl"><a href="projets/nat-acl.pkt" download>Télécharger le fichier .pkt</a></p>
+          <!-- Rapport PDF : mets-le dans rapports/nat-acl.pdf puis retire les -- autour de la ligne -->
+          <!-- <p class="dl"><a href="rapports/nat-acl.pdf" target="_blank" rel="noopener">Lire le rapport (PDF)</a></p> -->
+        </div>
+      </article>
+      <article class="proj big pt">
+        <a href="images/routage-inter-vlan.png" target="_blank" rel="noopener"><img src="images/routage-inter-vlan.png" alt="Topologie Packet Tracer du routage inter-VLAN : deux PC, un switch et un routeur 2911"></a>
+        <div>
+          <h3>Routage inter-VLAN</h3>
+          <p>Deux PC dans deux VLAN différents, un switch et un routeur. Le câble entre le switch et le routeur est divisé en deux sous-interfaces virtuelles (encapsulation) : chaque paquet venant d'un VLAN est traité par l'interface qui lui correspond.</p>
+          <p>Le routeur vérifie la destination du paquet et le dirige vers la bonne interface, ce qui permet aux deux VLAN de communiquer.</p>
+          <ul class="tags"><li>Packet Tracer</li><li>Router-on-a-stick</li><li>VLAN</li><li>Trunk</li></ul>
+          <p class="dl"><a href="projets/routage-inter-vlan.pkt" download>Télécharger le fichier .pkt</a></p>
+          <!-- <p class="dl"><a href="rapports/routage-inter-vlan.pdf" target="_blank" rel="noopener">Lire le rapport (PDF)</a></p> -->
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="wrap">
+    <h2>À propos</h2>
+    <div class="about">
+      <div>
+        <!-- Ta photo : mets-la dans images/photo.jpg (carrée de préférence) -->
+        <div class="photo" aria-hidden="false">E<img src="images/photo.jpg" alt="Portrait d'Emmanuel" onerror="this.remove()"></div>
+        <p>Je suis en dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité, à l'ENSI Tanger.</p>
+        <p>Mon terrain, ce sont les réseaux et la sécurité : comprendre comment les systèmes communiquent, puis comment les protéger.</p>
+        <!-- TODO: ajoute 1-2 phrases perso (CTF, veille, ce que tu cherches pour ton PFE) -->
+      </div>
+      <dl class="skills">
+        <dt>Réseaux</dt><dd>Simulation sous Cisco Packet Tracer, architecture réseau, supervision</dd>
+        <dt>Sécurité</dt><dd>Option cybersécurité (ENSI Tanger)</dd>
+        <dt>Outils</dt><dd>Docker, GLPI, ThingsBoard, MQTT</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Un stage, un projet, une question : écris-moi.</p>
+    <ul>
+      <!-- TODO: remplace par tes vrais liens -->
+      <li><a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></li>
+      <li><a href="https://www.linkedin.com/in/ton-profil">LinkedIn</a></li>
+      <li><a href="https://github.com/ton-pseudo">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
