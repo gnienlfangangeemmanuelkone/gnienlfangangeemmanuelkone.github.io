@@ -26,3 +26,30 @@
   }, { threshold: 0.12 });
   items.forEach(function (el) { io.observe(el); });
 })();
+// barre de progression
+var bar = document.createElement('div');
+bar.className = 'progress';
+document.body.appendChild(bar);
+function onScroll() {
+  var h = document.documentElement;
+  var p = h.scrollTop / ((h.scrollHeight - h.clientHeight) || 1);
+  bar.style.transform = 'scaleX(' + p + ')';
+}
+addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// lien actif selon la section visible
+var links = document.querySelectorAll('.nav a[href^="#"]');
+var spy = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
+      links.forEach(function (a) {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+links.forEach(function (a) {
+  var s = document.querySelector(a.getAttribute('href'));
+  if (s) spy.observe(s);
+});

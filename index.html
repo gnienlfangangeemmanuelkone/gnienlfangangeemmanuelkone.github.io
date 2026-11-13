@@ -13,10 +13,10 @@
 <body>
 <nav class="nav" aria-label="Navigation principale">
   <a href="#accueil">Accueil</a>
-  <a href="#expertise">Expertise</a>
-  <a href="#projets">Projets</a>
-  <a href="certificats.html">Certificats</a>
-  <a href="#contact">Contact</a>
+  <a href="#expertise">Compétences</a>
+  <a href="#projets">🚀 Projets</a>
+  <a href="certificats.html">📄 Certificats</a>
+  <a href="#contact">📧 Contact</a>
 </nav>
 
 <header class="hero" id="accueil">
@@ -28,30 +28,62 @@
   <p class="where">Tanger, Maroc · ENSI Tanger</p>
   <div class="btns">
     <a class="cta" href="#projets">Voir mes projets</a>
-    <a class="cta ghost" href="cv.pdf">Télécharger mon CV</a>
+   <a class="cta ghost" href="cv.pdf" target="_blank" rel="noopener"> mon CV</a>
   </div>
 </header>
 
 <section id="expertise">
   <div class="wrap">
-    <div class="head"><h2>Mon <b>expertise</b></h2><p>Dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité.</p></div>
-    <div class="grid">
-      <article class="card">
-        <h3>Réseaux</h3>
-        <p>Conception et simulation d’architectures réseau : segmentation en VLAN, routage inter-VLAN, traduction d’adresses et filtrage du trafic.</p>
-        <ul class="tags"><li>Cisco Packet Tracer</li><li>VLAN &amp; Trunk</li><li>Routage inter-VLAN</li><li>NAT</li><li>ACL</li></ul>
-      </article>
-      <article class="card">
-        <h3>Cybersécurité</h3>
-        <p>Sécurité des réseaux et des infrastructures, test d’intrusion et analyse de vulnérabilités. J’apprends par la pratique, les CTF et la veille.</p>
-        <ul class="tags"><li>Pentesting</li><li>Analyse de vulnérabilités</li><li>CTF</li><li>Veille technologique</li></ul>
-      </article>
-      <article class="card">
-        <h3>Supervision &amp; IoT</h3>
-        <p>Supervision d’équipements industriels, collecte de télémétrie et gestion d’un parc informatique.</p>
-        <ul class="tags"><li>ThingsBoard</li><li>MQTT</li><li>GLPI</li><li>Docker</li></ul>
-      </article>
-    </div>
+    <div class="head"><h2>Mes <b>Compétences</b></h2><p>Dernière année du cycle ingénieur en Génie Informatique, option Cybersécurité.</p></div>
+   <div class="grid">
+
+  <article class="card">
+    <h3>🌐 Réseaux</h3>
+    <ul class="can">
+      <li>Expliquer les concepts, types et composants d’un réseau</li>
+      <li>Comprendre le rôle des standards et des protocoles</li>
+      <li>Expliquer la communication sur un réseau Ethernet</li>
+      <li>Maîtriser l’adressage IPv4 et les bases de l’IPv6</li>
+      <li>Relier des réseaux avec des routeurs (VLAN, NAT, ACL)</li>
+      <li>Tester et dépanner la connectivité réseau</li>
+    </ul>
+    <ul class="tags"><li>Cisco Packet Tracer</li><li>Cisco Networking Academy</li></ul>
+  </article>
+
+  <article class="card">
+    <h3>🐧 Linux</h3>
+    <ul class="can">
+      <li>Utiliser la ligne de commande pour naviguer, créer, déplacer et supprimer des fichiers</li>
+      <li>Rechercher et extraire des données dans des fichiers</li>
+      <li>Automatiser des tâches répétitives avec des scripts</li>
+      <li>Gérer les utilisateurs, les droits et les propriétaires</li>
+      <li>Consulter la configuration réseau d’un système</li>
+    </ul>
+    <ul class="tags"><li>Bash</li><li>Ubuntu</li><li>Cisco / NDG</li></ul>
+  </article>
+
+  <article class="card">
+    <h3>🛡️ Cybersécurité</h3>
+    <ul class="can">
+      <li>Identifier les menaces : malwares, ingénierie sociale, violations de données</li>
+      <li>Appliquer les bonnes pratiques : mises à jour, MFA, chiffrement, mots de passe</li>
+      <li>Analyser des vulnérabilités (CVE/CWE) et comprendre leur exploitation en environnement contrôlé</li>
+      <li>Classer des failles OWASP et proposer des mesures de protection</li>
+    </ul>
+    <ul class="tags"><li>OWASP</li><li>CTF</li><li>IBM</li></ul>
+  </article>
+
+  <article class="card">
+    <h3>📡 Supervision &amp; IoT</h3>
+    <ul class="can">
+      <li>Créer des dashboards de supervision pour 5 groupes électrogènes</li>
+      <li>Collecter et remonter la télémétrie via MQTT</li>
+      <li>Déployer GLPI sous Docker pour inventorier un parc informatique</li>
+    </ul>
+    <ul class="tags"><li>ThingsBoard</li><li>MQTT</li><li>GLPI</li><li>Docker</li></ul>
+  </article>
+
+</div>
   </div>
 </section>
 
@@ -62,7 +94,7 @@
 
       <article class="card proj wide">
         <span class="tag-note">Projet de stage</span>
-        <h3>Supervision à distance de groupes électrogènes</h3>
+        <h3>⚡ Supervision à distance de groupes électrogènes</h3>
         <p>Système de supervision d’équipements industriels, avec remontée de télémétrie vers une plateforme IoT.</p>
         <!-- Dashboards : images/dashboard1.png, dashboard2.png... Une image absente disparaît toute seule. -->
         <div class="gallery">
@@ -76,7 +108,7 @@
 
       <article class="card proj">
         <span class="tag-note">Projet réseau</span>
-        <h3>NAT avec ACL entre deux VLAN</h3>
+        <h3>🔀 NAT avec ACL entre deux VLAN</h3>
         <a href="images/nat-acl.png" target="_blank" rel="noopener"><img src="images/nat-acl.png" alt="Topologie Packet Tracer : deux VLAN, un switch, un routeur 2911 et un serveur externe"></a>
         <p>Deux VLAN (10 et 20) reliés par un trunk à un routeur 2911, qui traduit leurs adresses privées en une adresse publique pour joindre un serveur externe. Une ACL étendue filtre le trafic du VLAN 20.</p>
         <p>Résultat : PC0 et PC1 partagent la même adresse publique (203.0.113.1), vérifiée avec <code>show ip nat translations</code>.</p>
@@ -89,7 +121,7 @@
 
       <article class="card proj">
         <span class="tag-note">Projet réseau</span>
-        <h3>Routage inter-VLAN</h3>
+        <h3>🔌 Routage inter-VLAN</h3>
         <a href="images/routage-inter-vlan.png" target="_blank" rel="noopener"><img src="images/routage-inter-vlan.png" alt="Topologie Packet Tracer : deux PC, un switch et un routeur 2911"></a>
         <p>Deux PC dans deux VLAN différents, un switch et un routeur. Le câble switch–routeur est divisé en deux sous-interfaces virtuelles (encapsulation) : chaque paquet est traité par l’interface de son VLAN.</p>
         <p>Le routeur vérifie la destination du paquet et le dirige vers la bonne interface, ce qui permet aux deux VLAN de communiquer.</p>
@@ -104,9 +136,39 @@
   </div>
 </section>
 
+
+<section id="parcours">
+  <div class="wrap">
+    <div class="head"><h2>Mon <b>parcours</b></h2><p>Ma formation et mes certifications.</p></div>
+    <div class="grid">
+
+      <article class="card">
+        <h3>🎓 Formation académique</h3>
+        <ul class="edu">
+          <li>Cycle ingénieur en Génie Informatique, option Cybersécurité
+            <small>ENSI Tanger · dernière année</small></li>
+          <!-- TODO: ajoute tes formations précédentes en copiant un bloc <li> -->
+          <!-- <li>Nom du diplôme<small>École · années</small></li> -->
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>🏅 Certifications IT</h3>
+        <ul class="tags">
+          <li>Notions de base sur les réseaux (Cisco)</li>
+          <li>Linux Unhatched (Cisco / NDG)</li>
+          <li>Introduction to Cybersecurity Essentials (IBM)</li>
+        </ul>
+        <a class="cta" href="certificats.html">📜 Voir mes certificats</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="contact">
   <div class="wrap">
-    <div class="head"><h2>Me <b>contacter</b></h2><p>Un PFE, un projet, une question : écris-moi.</p></div>
+    <div class="head"><h2>Me <b>contacter</b></h2><p></p></div>
     <ul>
       <li><a class="cta" href="mailto:mag604kone@gmail.com">mag604kone@gmail.com</a></li>
       <li><a class="cta ghost" href="https://www.linkedin.com/in/gnienlfang-ange-emmanuel-kone-068232335" target="_blank" rel="noopener">LinkedIn</a></li>
