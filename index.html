@@ -132,6 +132,24 @@
         </div>
       </article>
 
+      <article class="card proj wide">
+        <span class="tag-note">Projet cybersécurité</span>
+        <h3>🔐 Authentification à deux facteurs (2FA/TOTP)</h3>
+        <p>Application web Flask où un mot de passe ne suffit pas : après la connexion, l’utilisateur doit saisir un code à 6 chiffres généré par son smartphone (TOTP, RFC 6238). Les mots de passe sont hachés avec scrypt, et chaque compte possède son propre secret, transmis une seule fois par QR code.</p>
+        <p>Résultat : le tableau de bord n’est accessible qu’avec les deux facteurs validés. Un code ne peut servir qu’une fois (anti-rejeu), le compte est bloqué 5 minutes après 5 échecs, et les formulaires sont protégés contre le CSRF. L’ensemble est validé par des tests automatisés (pytest).</p>
+        <div class="gallery">
+          <a href="images/2fa-verification.png" target="_blank" rel="noopener"><img src="images/2fa-verification.png" alt="Page de vérification du code à 6 chiffres" onerror="this.closest('a').remove()"></a>
+          <a href="images/2fa-dashboard.png" target="_blank" rel="noopener"><img src="images/2fa-dashboard.png" alt="Tableau de bord accessible après validation des deux facteurs" onerror="this.closest('a').remove()"></a>
+          <a href="images/2fa-blocage.png" target="_blank" rel="noopener"><img src="images/2fa-blocage.png" alt="Message de blocage après cinq échecs" onerror="this.closest('a').remove()"></a>
+        </div>
+        <ul class="tags"><li>Flask</li><li>TOTP</li><li>scrypt</li><li>CSRF</li><li>pytest</li></ul>
+        <div class="actions">
+          <a class="cta" href="rapports/note-conception-2fa.pdf" target="_blank" rel="noopener">Voir la note de conception</a>
+          <!-- Quand le repo sera public :
+          <a class="cta ghost" href="https://github.com/gnienlfangangeemmanuelkone/coffre-notes-2fa" target="_blank" rel="noopener">Voir le code</a> -->
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
